@@ -24,8 +24,8 @@ G2L["2"]["Name"] = [[ListScript]];
 G2L["3"] = Instance.new("Frame", G2L["1"]);
 G2L["3"]["BorderSizePixel"] = 0;
 G2L["3"]["BackgroundColor3"] = Color3.fromRGB(239, 7, 255);
-G2L["3"]["Size"] = UDim2.new(0, 360, 0, 234);
-G2L["3"]["Position"] = UDim2.new(0.40205, 0, 0.35183, 0);
+G2L["3"]["Size"] = UDim2.new(0.13956, 0, 0.18068, 0);
+G2L["3"]["Position"] = UDim2.new(0.43022, 0, 0.40954, 0);
 G2L["3"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 
 
@@ -43,7 +43,7 @@ G2L["5"]["TextScaled"] = true;
 G2L["5"]["BackgroundColor3"] = Color3.fromRGB(255, 7, 190);
 G2L["5"]["FontFace"] = Font.new([[rbxasset://fonts/families/RobotoCondensed.json]], Enum.FontWeight.Light, Enum.FontStyle.Italic);
 G2L["5"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["5"]["Size"] = UDim2.new(0, 161, 0, 30);
+G2L["5"]["Size"] = UDim2.new(0.44722, 0, 0.12821, 0);
 G2L["5"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["5"]["Text"] = [[ZM HUBBY]];
 G2L["5"]["Position"] = UDim2.new(0.50556, 0, 0.0641, 0);
@@ -56,7 +56,7 @@ G2L["6"]["TextSize"] = 18;
 G2L["6"]["TextColor3"] = Color3.fromRGB(30, 26, 55);
 G2L["6"]["BackgroundColor3"] = Color3.fromRGB(230, 83, 255);
 G2L["6"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["6"]["Size"] = UDim2.new(0, 110, 0, 50);
+G2L["6"]["Size"] = UDim2.new(0.30556, 0, 0.21368, 0);
 G2L["6"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["6"]["Text"] = [[INJECT]];
 G2L["6"]["Position"] = UDim2.new(0.69444, 0, 0.78632, 0);
@@ -69,7 +69,7 @@ G2L["7"]["TextSize"] = 18;
 G2L["7"]["TextColor3"] = Color3.fromRGB(30, 26, 55);
 G2L["7"]["BackgroundColor3"] = Color3.fromRGB(230, 83, 255);
 G2L["7"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["7"]["Size"] = UDim2.new(0, 112, 0, 50);
+G2L["7"]["Size"] = UDim2.new(0.31111, 0, 0.21368, 0);
 G2L["7"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["7"]["Text"] = [[execute]];
 G2L["7"]["Position"] = UDim2.new(0.28611, 0, 0.78632, 0);
@@ -85,7 +85,7 @@ G2L["8"]["TextScaled"] = true;
 G2L["8"]["TextColor3"] = Color3.fromRGB(30, 26, 55);
 G2L["8"]["BackgroundColor3"] = Color3.fromRGB(230, 83, 255);
 G2L["8"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["8"]["Size"] = UDim2.new(0, 83, 0, 50);
+G2L["8"]["Size"] = UDim2.new(0.23056, 0, 0.21368, 0);
 G2L["8"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["8"]["Text"] = [[BACKDOOR 67 FINDER V2]];
 G2L["8"]["Position"] = UDim2.new(0.05556, 0, 0.78632, 0);
@@ -96,7 +96,7 @@ G2L["9"] = Instance.new("ImageLabel", G2L["3"]);
 G2L["9"]["BorderSizePixel"] = 0;
 G2L["9"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["9"]["Image"] = [[rbxassetid://103971627119686]];
-G2L["9"]["Size"] = UDim2.new(0, 182, 0, 34);
+G2L["9"]["Size"] = UDim2.new(0.50556, 0, 0.1453, 0);
 G2L["9"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 
 
@@ -114,7 +114,7 @@ G2L["a"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], 
 G2L["a"]["MultiLine"] = true;
 G2L["a"]["ClearTextOnFocus"] = false;
 G2L["a"]["PlaceholderText"] = [[-- paste or pick a script here...]];
-G2L["a"]["Size"] = UDim2.new(0, 314, 0, 78);
+G2L["a"]["Size"] = UDim2.new(0.87222, 0, 0.33333, 0);
 G2L["a"]["Position"] = UDim2.new(0.05556, 0, 0.26496, 0);
 G2L["a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["a"]["Text"] = [[]];
@@ -130,7 +130,7 @@ G2L["b"]["TextScaled"] = true;
 G2L["b"]["TextColor3"] = Color3.fromRGB(30, 26, 55);
 G2L["b"]["BackgroundColor3"] = Color3.fromRGB(230, 83, 255);
 G2L["b"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["b"]["Size"] = UDim2.new(0, 83, 0, 17);
+G2L["b"]["Size"] = UDim2.new(0.23056, 0, 0.07265, 0);
 G2L["b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["b"]["Text"] = [[LIST OF SCRIPT]];
 G2L["b"]["Position"] = UDim2.new(0.05556, 0, 0.71368, 0);
@@ -141,8 +141,8 @@ G2L["c"] = Instance.new("Frame", G2L["3"]);
 G2L["c"]["Visible"] = false;
 G2L["c"]["BorderSizePixel"] = 0;
 G2L["c"]["BackgroundColor3"] = Color3.fromRGB(239, 7, 255);
-G2L["c"]["Size"] = UDim2.new(0, 180, 1, 0);
-G2L["c"]["Position"] = UDim2.new(1, 6, 0, 0);
+G2L["c"]["Size"] = UDim2.new(0.5, 0, 1, 0);
+G2L["c"]["Position"] = UDim2.new(1.01667, 0, 0, 0);
 G2L["c"]["Name"] = [[ScriptList]];
 G2L["c"]["BackgroundTransparency"] = 0.15;
 
@@ -153,10 +153,10 @@ G2L["d"]["TextSize"] = 14;
 G2L["d"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
 G2L["d"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["d"]["BackgroundTransparency"] = 1;
-G2L["d"]["Size"] = UDim2.new(1, 0, 0, 24);
+G2L["d"]["Size"] = UDim2.new(1, 0, 0.10256, 0);
 G2L["d"]["Text"] = [[Script List]];
 G2L["d"]["Name"] = [[Title]];
-G2L["d"]["Position"] = UDim2.new(0, 0, 0, 4);
+G2L["d"]["Position"] = UDim2.new(0, 0, 0.01709, 0);
 
 
 -- StarterGui.ScreenGui.Frame.ScriptList.List
@@ -166,8 +166,8 @@ G2L["e"]["CanvasSize"] = UDim2.new(0, 0, 0, 0);
 G2L["e"]["Name"] = [[List]];
 G2L["e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["e"]["AutomaticCanvasSize"] = Enum.AutomaticSize.Y;
-G2L["e"]["Size"] = UDim2.new(1, -12, 1, -34);
-G2L["e"]["Position"] = UDim2.new(0, 6, 0, 30);
+G2L["e"]["Size"] = UDim2.new(0.93333, 0, 0.8547, 0);
+G2L["e"]["Position"] = UDim2.new(0.03333, 0, 0.12821, 0);
 G2L["e"]["ScrollBarThickness"] = 4;
 
 
@@ -179,10 +179,10 @@ G2L["f"]["TextXAlignment"] = Enum.TextXAlignment.Left;
 G2L["f"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
 G2L["f"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["f"]["BackgroundTransparency"] = 1;
-G2L["f"]["Size"] = UDim2.new(1, -16, 0, 16);
+G2L["f"]["Size"] = UDim2.new(0.95556, 0, 0.06838, 0);
 G2L["f"]["Text"] = [[Status: Ready]];
 G2L["f"]["Name"] = [[Status]];
-G2L["f"]["Position"] = UDim2.new(0, 8, 1, -20);
+G2L["f"]["Position"] = UDim2.new(0.02222, 0, 0.91453, 0);
 
 
 -- StarterGui.ScreenGui.ListScript
