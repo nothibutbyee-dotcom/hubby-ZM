@@ -24,8 +24,8 @@ G2L["2"]["Name"] = [[ListScript]];
 G2L["3"] = Instance.new("Frame", G2L["1"]);
 G2L["3"]["BorderSizePixel"] = 0;
 G2L["3"]["BackgroundColor3"] = Color3.fromRGB(239, 7, 255);
-G2L["3"]["Size"] = UDim2.new(0.27849, 0, 0.24843, 0);
-G2L["3"]["Position"] = UDim2.new(0.64597, 0, 0.11218, 0);
+G2L["3"]["Size"] = UDim2.new(0.37004, 0, 0.38143, 0);
+G2L["3"]["Position"] = UDim2.new(0.55442, 0, 0.11218, 0);
 G2L["3"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 
 
