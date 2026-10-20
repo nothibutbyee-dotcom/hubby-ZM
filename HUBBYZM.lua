@@ -7,12 +7,12 @@
  Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER 
 ]=]
 
--- Instances: 15 | Scripts: 1 | Modules: 0 | Tags: 0
+-- Instances: 17 | Scripts: 1 | Modules: 0 | Tags: 0
 local G2L = {};
 
 -- StarterGui.ScreenGui
 G2L["1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"));
-G2L["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
+
 
 
 -- StarterGui.ScreenGui.ListScript
@@ -22,10 +22,11 @@ G2L["2"]["Name"] = [[ListScript]];
 
 -- StarterGui.ScreenGui.Frame
 G2L["3"] = Instance.new("Frame", G2L["1"]);
+G2L["3"]["ZIndex"] = 0;
 G2L["3"]["BorderSizePixel"] = 0;
 G2L["3"]["BackgroundColor3"] = Color3.fromRGB(239, 7, 255);
-G2L["3"]["Size"] = UDim2.new(0.38732, 0, 0.48557, 0);
-G2L["3"]["Position"] = UDim2.new(0.30602, 0, 0.25647, 0);
+G2L["3"]["Size"] = UDim2.new(0.39181, 0, 0.56628, 0);
+G2L["3"]["Position"] = UDim2.new(0.48271, 0, 0.10389, 0);
 G2L["3"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 
 
@@ -37,7 +38,7 @@ G2L["4"] = Instance.new("UIDragDetector", G2L["3"]);
 -- StarterGui.ScreenGui.Frame.TextLabel
 G2L["5"] = Instance.new("TextLabel", G2L["3"]);
 G2L["5"]["TextWrapped"] = true;
-G2L["5"]["BorderSizePixel"] = 0;
+G2L["5"]["BorderSizePixel"] = 3;
 G2L["5"]["TextSize"] = 26;
 G2L["5"]["TextScaled"] = true;
 G2L["5"]["BackgroundColor3"] = Color3.fromRGB(255, 7, 190);
@@ -49,147 +50,165 @@ G2L["5"]["Text"] = [[ZM HUBBY]];
 G2L["5"]["Position"] = UDim2.new(0.50556, 0, 0.0641, 0);
 
 
--- StarterGui.ScreenGui.Frame.TextButton
-G2L["6"] = Instance.new("TextButton", G2L["3"]);
-G2L["6"]["BorderSizePixel"] = 0;
-G2L["6"]["TextSize"] = 18;
-G2L["6"]["TextColor3"] = Color3.fromRGB(30, 26, 55);
-G2L["6"]["BackgroundColor3"] = Color3.fromRGB(230, 83, 255);
-G2L["6"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["6"]["Size"] = UDim2.new(0.30556, 0, 0.21368, 0);
-G2L["6"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["6"]["Text"] = [[INJECT]];
-G2L["6"]["Position"] = UDim2.new(0.69444, 0, 0.78632, 0);
+-- StarterGui.ScreenGui.Frame.TextLabel.UICorner
+G2L["6"] = Instance.new("UICorner", G2L["5"]);
+G2L["6"]["CornerRadius"] = UDim.new(1.5, 0);
 
 
--- StarterGui.ScreenGui.Frame.TextButton
-G2L["7"] = Instance.new("TextButton", G2L["3"]);
-G2L["7"]["BorderSizePixel"] = 2;
-G2L["7"]["TextSize"] = 18;
-G2L["7"]["TextColor3"] = Color3.fromRGB(30, 26, 55);
-G2L["7"]["BackgroundColor3"] = Color3.fromRGB(230, 83, 255);
-G2L["7"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["7"]["Size"] = UDim2.new(0.31111, 0, 0.21368, 0);
-G2L["7"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["7"]["Text"] = [[execute]];
-G2L["7"]["Position"] = UDim2.new(0.28611, 0, 0.78632, 0);
+-- StarterGui.ScreenGui.Frame.TextLabel.UIStroke
+G2L["7"] = Instance.new("UIStroke", G2L["5"]);
+G2L["7"]["Thickness"] = 2.9;
+G2L["7"]["Color"] = Color3.fromRGB(222, 85, 208);
 
 
 -- StarterGui.ScreenGui.Frame.TextButton
 G2L["8"] = Instance.new("TextButton", G2L["3"]);
-G2L["8"]["TextWrapped"] = true;
-G2L["8"]["RichText"] = true;
-G2L["8"]["BorderSizePixel"] = 2;
-G2L["8"]["TextSize"] = 10;
-G2L["8"]["TextScaled"] = true;
+G2L["8"]["BorderSizePixel"] = 3;
+G2L["8"]["TextSize"] = 63;
 G2L["8"]["TextColor3"] = Color3.fromRGB(30, 26, 55);
 G2L["8"]["BackgroundColor3"] = Color3.fromRGB(230, 83, 255);
 G2L["8"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["8"]["Size"] = UDim2.new(0.23056, 0, 0.21368, 0);
+G2L["8"]["Size"] = UDim2.new(0.30556, 0, 0.21368, 0);
 G2L["8"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["8"]["Text"] = [[BACKDOOR 67 FINDER V2]];
-G2L["8"]["Position"] = UDim2.new(0.05556, 0, 0.78632, 0);
-
-
--- StarterGui.ScreenGui.Frame.ImageLabel
-G2L["9"] = Instance.new("ImageLabel", G2L["3"]);
-G2L["9"]["BorderSizePixel"] = 0;
-G2L["9"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["9"]["Image"] = [[rbxassetid://103971627119686]];
-G2L["9"]["Size"] = UDim2.new(0.50556, 0, 0.1453, 0);
-G2L["9"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-
-
--- StarterGui.ScreenGui.Frame.TextBox
-G2L["a"] = Instance.new("TextBox", G2L["3"]);
-G2L["a"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["a"]["BorderSizePixel"] = 0;
-G2L["a"]["TextWrapped"] = true;
-G2L["a"]["TextSize"] = 13;
-G2L["a"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["a"]["TextYAlignment"] = Enum.TextYAlignment.Top;
-G2L["a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["a"]["RichText"] = true;
-G2L["a"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["a"]["MultiLine"] = true;
-G2L["a"]["ClearTextOnFocus"] = false;
-G2L["a"]["PlaceholderText"] = [[-- paste or pick a script here...]];
-G2L["a"]["Size"] = UDim2.new(0.87222, 0, 0.33333, 0);
-G2L["a"]["Position"] = UDim2.new(0.05556, 0, 0.26496, 0);
-G2L["a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["a"]["Text"] = [[]];
+G2L["8"]["Text"] = [[INJECT]];
+G2L["8"]["Position"] = UDim2.new(0.69444, 0, 0.78632, 0);
 
 
 -- StarterGui.ScreenGui.Frame.TextButton
-G2L["b"] = Instance.new("TextButton", G2L["3"]);
-G2L["b"]["TextWrapped"] = true;
-G2L["b"]["RichText"] = true;
+G2L["9"] = Instance.new("TextButton", G2L["3"]);
+G2L["9"]["BorderSizePixel"] = 2;
+G2L["9"]["TextSize"] = 60;
+G2L["9"]["TextColor3"] = Color3.fromRGB(30, 26, 55);
+G2L["9"]["BackgroundColor3"] = Color3.fromRGB(230, 83, 255);
+G2L["9"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["9"]["Size"] = UDim2.new(0.31111, 0, 0.21368, 0);
+G2L["9"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["9"]["Text"] = [[execute]];
+G2L["9"]["Position"] = UDim2.new(0.28611, 0, 0.78632, 0);
+
+
+-- StarterGui.ScreenGui.Frame.TextButton
+G2L["a"] = Instance.new("TextButton", G2L["3"]);
+G2L["a"]["TextWrapped"] = true;
+G2L["a"]["RichText"] = true;
+G2L["a"]["BorderSizePixel"] = 2;
+G2L["a"]["TextSize"] = 10;
+G2L["a"]["TextScaled"] = true;
+G2L["a"]["TextColor3"] = Color3.fromRGB(30, 26, 55);
+G2L["a"]["BackgroundColor3"] = Color3.fromRGB(230, 83, 255);
+G2L["a"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["a"]["Size"] = UDim2.new(0.23056, 0, 0.21368, 0);
+G2L["a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["a"]["Text"] = [[FURRY FEMBOY FINDER V3]];
+G2L["a"]["Position"] = UDim2.new(0.05556, 0, 0.78632, 0);
+
+
+-- StarterGui.ScreenGui.Frame.TextBox
+G2L["b"] = Instance.new("TextBox", G2L["3"]);
+G2L["b"]["CursorPosition"] = -1;
+G2L["b"]["TextXAlignment"] = Enum.TextXAlignment.Left;
 G2L["b"]["BorderSizePixel"] = 2;
-G2L["b"]["TextSize"] = 10;
-G2L["b"]["TextScaled"] = true;
-G2L["b"]["TextColor3"] = Color3.fromRGB(30, 26, 55);
-G2L["b"]["BackgroundColor3"] = Color3.fromRGB(230, 83, 255);
-G2L["b"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["b"]["Size"] = UDim2.new(0.23056, 0, 0.07265, 0);
+G2L["b"]["TextWrapped"] = true;
+G2L["b"]["TextSize"] = 13;
+G2L["b"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["b"]["TextYAlignment"] = Enum.TextYAlignment.Top;
+G2L["b"]["BackgroundColor3"] = Color3.fromRGB(249, 199, 255);
+G2L["b"]["RichText"] = true;
+G2L["b"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["b"]["MultiLine"] = true;
+G2L["b"]["ClearTextOnFocus"] = false;
+G2L["b"]["PlaceholderText"] = [[-- paste or pick a script here...]];
+G2L["b"]["Size"] = UDim2.new(0.87222, 0, 0.33333, 0);
+G2L["b"]["Position"] = UDim2.new(0.05556, 0, 0.26496, 0);
 G2L["b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["b"]["Text"] = [[LIST OF SCRIPT]];
-G2L["b"]["Position"] = UDim2.new(0.05556, 0, 0.71368, 0);
+G2L["b"]["Text"] = [[]];
+
+
+-- StarterGui.ScreenGui.Frame.TextButton
+G2L["c"] = Instance.new("TextButton", G2L["3"]);
+G2L["c"]["TextWrapped"] = true;
+G2L["c"]["RichText"] = true;
+G2L["c"]["BorderSizePixel"] = 2;
+G2L["c"]["TextSize"] = 10;
+G2L["c"]["TextScaled"] = true;
+G2L["c"]["TextColor3"] = Color3.fromRGB(30, 26, 55);
+G2L["c"]["BackgroundColor3"] = Color3.fromRGB(230, 83, 255);
+G2L["c"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["c"]["Size"] = UDim2.new(0.23056, 0, 0.07265, 0);
+G2L["c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["c"]["Text"] = [[LIST OF SCRIPT]];
+G2L["c"]["Position"] = UDim2.new(0.05392, 0, 0.66246, 0);
 
 
 -- StarterGui.ScreenGui.Frame.ScriptList
-G2L["c"] = Instance.new("Frame", G2L["3"]);
-G2L["c"]["Visible"] = false;
-G2L["c"]["BorderSizePixel"] = 0;
-G2L["c"]["BackgroundColor3"] = Color3.fromRGB(239, 7, 255);
-G2L["c"]["Size"] = UDim2.new(0.5, 0, 1, 0);
-G2L["c"]["Position"] = UDim2.new(1.01667, 0, 0, 0);
-G2L["c"]["Name"] = [[ScriptList]];
-G2L["c"]["BackgroundTransparency"] = 0.15;
+G2L["d"] = Instance.new("Frame", G2L["3"]);
+G2L["d"]["Visible"] = false;
+G2L["d"]["BorderSizePixel"] = 0;
+G2L["d"]["BackgroundColor3"] = Color3.fromRGB(239, 7, 255);
+G2L["d"]["Size"] = UDim2.new(0.53922, 0, 1.02895, 0);
+G2L["d"]["Position"] = UDim2.new(-0.5683, 0, -0.01559, 0);
+G2L["d"]["Name"] = [[ScriptList]];
+G2L["d"]["BackgroundTransparency"] = 0.15;
 
 
 -- StarterGui.ScreenGui.Frame.ScriptList.Title
-G2L["d"] = Instance.new("TextLabel", G2L["c"]);
-G2L["d"]["TextSize"] = 14;
-G2L["d"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["d"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["d"]["BackgroundTransparency"] = 1;
-G2L["d"]["Size"] = UDim2.new(1, 0, 0.10256, 0);
-G2L["d"]["Text"] = [[Script List]];
-G2L["d"]["Name"] = [[Title]];
-G2L["d"]["Position"] = UDim2.new(0, 0, 0.01709, 0);
+G2L["e"] = Instance.new("TextLabel", G2L["d"]);
+G2L["e"]["TextWrapped"] = true;
+G2L["e"]["TextSize"] = 14;
+G2L["e"]["TextScaled"] = true;
+G2L["e"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["e"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["e"]["BackgroundTransparency"] = 1;
+G2L["e"]["Size"] = UDim2.new(1, 0, 0.10256, 0);
+G2L["e"]["Text"] = [[Script List]];
+G2L["e"]["Name"] = [[Title]];
+G2L["e"]["Position"] = UDim2.new(0, 0, 0.01709, 0);
 
 
 -- StarterGui.ScreenGui.Frame.ScriptList.List
-G2L["e"] = Instance.new("ScrollingFrame", G2L["c"]);
-G2L["e"]["BorderSizePixel"] = 0;
-G2L["e"]["CanvasSize"] = UDim2.new(0, 0, 0, 0);
-G2L["e"]["Name"] = [[List]];
-G2L["e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["e"]["AutomaticCanvasSize"] = Enum.AutomaticSize.Y;
-G2L["e"]["Size"] = UDim2.new(0.93333, 0, 0.8547, 0);
-G2L["e"]["Position"] = UDim2.new(0.03333, 0, 0.12821, 0);
-G2L["e"]["ScrollBarThickness"] = 4;
+G2L["f"] = Instance.new("ScrollingFrame", G2L["d"]);
+G2L["f"]["BorderSizePixel"] = 0;
+G2L["f"]["CanvasSize"] = UDim2.new(0, 0, 0, 0);
+G2L["f"]["Name"] = [[List]];
+G2L["f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["f"]["AutomaticCanvasSize"] = Enum.AutomaticSize.Y;
+G2L["f"]["Size"] = UDim2.new(0.93333, 0, 0.8547, 0);
+G2L["f"]["Position"] = UDim2.new(0.03333, 0, 0.12821, 0);
+G2L["f"]["ScrollBarThickness"] = 4;
 
 
 -- StarterGui.ScreenGui.Frame.Status
-G2L["f"] = Instance.new("TextLabel", G2L["3"]);
-G2L["f"]["TextTruncate"] = Enum.TextTruncate.AtEnd;
-G2L["f"]["TextSize"] = 12;
-G2L["f"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["f"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["f"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["f"]["BackgroundTransparency"] = 1;
-G2L["f"]["Size"] = UDim2.new(0.95556, 0, 0.06838, 0);
-G2L["f"]["Text"] = [[Status: Ready]];
-G2L["f"]["Name"] = [[Status]];
-G2L["f"]["Position"] = UDim2.new(0.02222, 0, 0.91453, 0);
+G2L["10"] = Instance.new("TextLabel", G2L["3"]);
+G2L["10"]["TextWrapped"] = true;
+G2L["10"]["TextStrokeTransparency"] = 0;
+G2L["10"]["TextTruncate"] = Enum.TextTruncate.AtEnd;
+G2L["10"]["BorderSizePixel"] = 7;
+G2L["10"]["TextSize"] = 22;
+G2L["10"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["10"]["BackgroundColor3"] = Color3.fromRGB(146, 64, 166);
+G2L["10"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["10"]["TextColor3"] = Color3.fromRGB(255, 104, 248);
+G2L["10"]["BackgroundTransparency"] = 1;
+G2L["10"]["Size"] = UDim2.new(0.95556, 0, 0.06838, 0);
+G2L["10"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["10"]["Text"] = [[Status: Ready]];
+G2L["10"]["Name"] = [[Status]];
+G2L["10"]["Position"] = UDim2.new(0.03203, 0, 0.01932, 0);
+
+
+-- StarterGui.ScreenGui.Frame.ImageLabel
+G2L["11"] = Instance.new("ImageLabel", G2L["3"]);
+G2L["11"]["ZIndex"] = 0;
+G2L["11"]["BorderSizePixel"] = 6;
+G2L["11"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["11"]["Image"] = [[rbxassetid://103971627119686]];
+G2L["11"]["Size"] = UDim2.new(0, 612, 0, 449);
+G2L["11"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 
 
 -- StarterGui.ScreenGui.ListScript
 local function C_2()
 local script = G2L["2"];
-	-- ZM HUBBY v3 - fake executor UI
-	-- All "server-sided" scripts are FAKE: they only run chaotic LOCAL effects on this client.
 	local gui = script.Parent
 	local frame = gui:WaitForChild("Frame")
 	
@@ -358,6 +377,11 @@ local script = G2L["2"];
 		end
 		destroyedMapParts = {}
 		restoreLighting()
+		for _, e in ipairs(Lighting:GetChildren()) do
+			if e:IsA("ColorCorrectionEffect") and e.Name == "ZM_NIGHTVISION" then
+				e.Parent = nil
+			end
+		end
 		workspace.Gravity = DEFAULT_GRAVITY
 		if chaosFolder then
 			chaosFolder.Parent = nil
@@ -433,73 +457,6 @@ local script = G2L["2"];
 			end
 		end)
 	end
-	
-	-- console log panel (click the Status bar to toggle)
-	local console = Instance.new("Frame")
-	console.Name = "Console"
-	console.BackgroundColor3 = Color3.fromRGB(18, 18, 24)
-	console.BackgroundTransparency = 0.1
-	console.BorderSizePixel = 0
-	console.Position = UDim2.new(0, -190, 0, 0)
-	console.Size = UDim2.new(0, 184, 1, 0)
-	console.Visible = false
-	console.Parent = frame
-	
-	
-	local consoleTitle = Instance.new("TextLabel")
-	consoleTitle.BackgroundTransparency = 1
-	consoleTitle.Position = UDim2.new(0, 6, 0, 4)
-	consoleTitle.Size = UDim2.new(1, -12, 0, 14)
-	consoleTitle.Text = "Console"
-	consoleTitle.TextColor3 = Color3.fromRGB(160, 160, 180)
-	consoleTitle.Font = Enum.Font.Code
-	consoleTitle.TextSize = 12
-	consoleTitle.TextXAlignment = Enum.TextXAlignment.Left
-	consoleTitle.Parent = console
-	
-	local consoleLog = Instance.new("ScrollingFrame")
-	consoleLog.BackgroundTransparency = 1
-	consoleLog.Position = UDim2.new(0, 6, 0, 22)
-	consoleLog.Size = UDim2.new(1, -12, 1, -28)
-	consoleLog.CanvasSize = UDim2.new(0, 0, 0, 0)
-	consoleLog.AutomaticCanvasSize = Enum.AutomaticSize.Y
-	consoleLog.ScrollBarThickness = 3
-	consoleLog.Parent = console
-	
-	local consoleLayout = Instance.new("UIListLayout")
-	consoleLayout.Padding = UDim.new(0, 2)
-	consoleLayout.SortOrder = Enum.SortOrder.LayoutOrder
-	consoleLayout.Parent = consoleLog
-	
-	local function log(text, color)
-		local line = Instance.new("TextLabel")
-		line.BackgroundTransparency = 1
-		line.Size = UDim2.new(1, 0, 0, 14)
-		line.AutomaticSize = Enum.AutomaticSize.Y
-		line.Text = "[" .. os.date("%X") .. "] " .. text
-		line.TextColor3 = color or Color3.fromRGB(150, 160, 175)
-		line.Font = Enum.Font.Code
-		line.TextSize = 11
-		line.TextXAlignment = Enum.TextXAlignment.Left
-		line.TextWrapped = true
-		line.Parent = consoleLog
-		consoleLog.CanvasPosition = Vector2.new(0, consoleLog.AbsoluteCanvasSize.Y)
-		-- keep max 60 lines
-		local children = {}
-		for _, c in ipairs(consoleLog:GetChildren()) do
-			if c:IsA("TextLabel") then table.insert(children, c) end
-		end
-		if #children > 60 then
-			children[1].Parent = nil
-		end
-	end
-	
-	statusLabel.Active = true
-	statusLabel.InputBegan:Connect(function(input)
-		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
-			console.Visible = not console.Visible
-		end
-	end)
 	
 	-- screen flash
 	local function flashScreen(color, duration)
@@ -1509,6 +1466,283 @@ local script = G2L["2"];
 				return "All effects cleared - " .. restored .. " parts restored, world back to normal"
 			end,
 		},
+		-- ===== NEW SCRIPTS =====
+		{
+			name = "Become Banana [SS]",
+			category = "MORPHS",
+			code = "--[=[ Banana Morph (backdoor)\n-- turns you into a giant BANANA serverside\nrequire(8888):morph('Banana', 'me', {Slippery = true}) ]=]",
+			effect = function()
+				local char = getChar()
+				if not char then return NO_CHAR end
+				paintBody(char, function() return Color3.fromRGB(255, 220, 40) end)
+				local hum = getHum()
+				if hum then
+					hum.UseJumpPower = true
+					hum.JumpPower = 70
+				end
+				return "YOU ARE BANANA. Slippery powers activated. (respawn to undo)"
+			end,
+		},
+		{
+			name = "Galaxy Skin [SS]",
+			category = "MORPHS",
+			code = "--[=[ Galaxy Morph (backdoor)\n-- gives you a glowing galaxy skin serverside\nrequire(777):morph('Galaxy', 'me', {Stars = true}) ]=]",
+			effect = function()
+				local char = getChar()
+				if not char then return NO_CHAR end
+				paintBody(char, function() return Color3.fromRGB(20, 10, 45) end, Enum.Material.Neon)
+				local root = char:FindFirstChild("HumanoidRootPart")
+				if root then
+					local stars = Instance.new("ParticleEmitter")
+					stars.Texture = "rbxasset://textures/particles/sparkles_main.dds"
+					stars.Color = ColorSequence.new(Color3.fromRGB(180, 120, 255))
+					stars.Rate = 35
+					stars.Lifetime = NumberRange.new(0.5, 1.2)
+					stars.Speed = NumberRange.new(1, 3)
+					stars.Size = NumberSequence.new(0.4)
+					stars.Parent = root
+				end
+				return "GALAXY SKIN equipped. You are one with the stars. (respawn to undo)"
+			end,
+		},
+		{
+			name = "Ocean Map [SS]",
+			category = "MAPS",
+			code = "--[=[ Ocean Loader (backdoor)\n-- floods the entire server with ocean\nrequire(99):loadMap('Ocean', {Depth = 500}) ]=]",
+			effect = function()
+				local count = applyMapTheme(
+					{
+						Color3.fromRGB(30, 120, 200),
+						Color3.fromRGB(40, 140, 220),
+						Color3.fromRGB(25, 100, 180),
+					},
+					Enum.Material.Glass,
+					function(L)
+						L.FogColor = Color3.fromRGB(40, 140, 220)
+						L.FogStart = 20
+						L.FogEnd = 250
+						L.ClockTime = 12
+						L.Ambient = Color3.fromRGB(80, 150, 210)
+						L.OutdoorAmbient = Color3.fromRGB(80, 150, 210)
+					end
+				)
+				return "OCEAN LOADED. " .. count .. " parts flooded. Watch out for sharks."
+			end,
+		},
+		{
+			name = "Neon City Map [SS]",
+			category = "MAPS",
+			code = "--[=[ Neon City Loader (backdoor)\n-- converts the server into a cyberpunk neon city\nrequire(99):loadMap('NeonCity', {Cyberpunk = true}) ]=]",
+			effect = function()
+				local count = applyMapTheme(
+					{
+						Color3.fromRGB(255, 0, 128),
+						Color3.fromRGB(0, 255, 255),
+						Color3.fromRGB(120, 0, 255),
+						Color3.fromRGB(0, 255, 100),
+					},
+					Enum.Material.Neon,
+					function(L)
+						L.FogColor = Color3.fromRGB(10, 5, 25)
+						L.FogStart = 15
+						L.FogEnd = 200
+						L.ClockTime = 0
+						L.Ambient = Color3.fromRGB(40, 20, 80)
+						L.OutdoorAmbient = Color3.fromRGB(40, 20, 80)
+					end
+				)
+				return "NEON CITY LOADED. " .. count .. " parts turned cyberpunk."
+			end,
+		},
+		{
+			name = "Black Hole [SS]",
+			category = "CHAOS",
+			code = "--[=[ Black Hole (server-sided)\n-- spawns a black hole that sucks in the whole server\nrequire(666000):spawnBlackHole('me', {Radius = 200}) ]=]",
+			effect = function()
+				local char = getChar()
+				local root = char and char:FindFirstChild("HumanoidRootPart")
+				if not root then return NO_CHAR end
+				local folder = getChaosFolder()
+				local gen = generation
+	
+				local hole = Instance.new("Part")
+				hole.Shape = Enum.PartType.Ball
+				hole.Size = Vector3.new(6, 6, 6)
+				hole.Color = Color3.fromRGB(0, 0, 0)
+				hole.Material = Enum.Material.Neon
+				hole.Anchored = true
+				hole.CanCollide = false
+				hole.CFrame = CFrame.new(root.Position + Vector3.new(0, 20, -30))
+				hole.Parent = folder
+	
+				task.spawn(function()
+					local ring = {}
+					for i = 1, 10 do
+						local p = Instance.new("Part")
+						p.Size = Vector3.new(1.5, 1.5, 1.5)
+					p.Color = Color3.fromHSV(math.random(), 1, 1)
+					p.Material = Enum.Material.Neon
+					p.Anchored = true
+					p.CanCollide = false
+					p.Parent = folder
+					ring[i] = {part = p, angle = (i / 10) * math.pi * 2, radius = 8 + math.random(10)}
+				end
+					for t = 1, 200 do
+						if generation ~= gen then break end
+						for _, e in ipairs(ring) do
+							e.radius = math.max(3, e.radius - 0.15)
+							e.part.CFrame = CFrame.new(hole.Position + Vector3.new(
+								math.cos(e.angle + t * 0.1) * e.radius,
+								math.sin(t * 0.1) * 2,
+								math.sin(e.angle + t * 0.1) * e.radius
+							))
+						end
+						task.wait(0.03)
+					end
+					for _, e in ipairs(ring) do
+						e.part.Parent = nil
+					end
+					hole.Parent = nil
+				end)
+				shakeCamera(1, 0.4)
+				return "BLACK HOLE spawned - it is devouring everything nearby!"
+			end,
+		},
+		{
+			name = "Fire Rain [SS]",
+			category = "CHAOS",
+			code = "--[=[ Fire Rain Event (server-sided)\n-- sets the whole server on fire rain\nrequire(7773333):triggerEvent('FireRain', {Duration = 8}) ]=]",
+			effect = function()
+				local char = getChar()
+				local root = char and char:FindFirstChild("HumanoidRootPart")
+				if not root then return NO_CHAR end
+				local folder = getChaosFolder()
+				local gen = generation
+	
+				task.spawn(function()
+					for i = 1, 24 do
+						if generation ~= gen then break end
+						local fire = Instance.new("Part")
+						fire.Shape = Enum.PartType.Ball
+						fire.Size = Vector3.new(1.5, 1.5, 1.5)
+						fire.Color = Color3.fromRGB(255, 100, 10)
+						fire.Material = Enum.Material.Neon
+						fire.Anchored = true
+						fire.CanCollide = false
+						local startPos = root.Position + Vector3.new(math.random(-40, 40), 70, math.random(-40, 40))
+						fire.CFrame = CFrame.new(startPos)
+						local embers = Instance.new("ParticleEmitter")
+						embers.Color = ColorSequence.new(Color3.fromRGB(255, 140, 30))
+						embers.Rate = 30
+						embers.Lifetime = NumberRange.new(0.2, 0.5)
+						embers.Speed = NumberRange.new(2)
+						embers.Parent = fire
+						fire.Parent = folder
+						local drop = TweenService:Create(fire, TweenInfo.new(1.5, Enum.EasingStyle.Quad, Enum.EasingDirection.In), {
+						CFrame = CFrame.new(startPos - Vector3.new(0, 70, 0)),
+						})
+					drop.Completed:Connect(function()
+							fire.Parent = nil
+						end)
+						drop:Play()
+						task.wait(0.3)
+					end
+				end)
+				return "FIRE RAIN for 8 seconds - the sky is burning!"
+			end,
+		},
+		{
+			name = "Lightning Storm [SS]",
+			category = "CHAOS",
+			code = "--[=[ Lightning Storm (server-sided)\n-- summons a lightning storm on the whole server\nrequire(7773333):triggerEvent('LightningStorm', {Strikes = 20}) ]=]",
+			effect = function()
+				local gen = generation
+				task.spawn(function()
+					for i = 1, 16 do
+						if generation ~= gen then break end
+						flashScreen(Color3.fromRGB(255, 255, 255), 0.25)
+						shakeCamera(0.3, 0.6)
+						playSound(SND_EXEC, 0.6)
+						task.wait(math.random(30, 60) / 100)
+					end
+				end)
+				return "LIGHTNING STORM summoned - 16 strikes incoming!"
+			end,
+		},
+		{
+			name = "UFO Abduction [SS]",
+			category = "CHAOS",
+			code = "--[=[ UFO Event (server-sided)\n-- a UFO abducts you in front of the whole server\nrequire(13371337):spawnUFO('me', {Beam = true}) ]=]",
+			effect = function()
+				local char = getChar()
+				local root = char and char:FindFirstChild("HumanoidRootPart")
+				if not root then return NO_CHAR end
+				local folder = getChaosFolder()
+				local gen = generation
+	
+				local beam = Instance.new("Part")
+				beam.Shape = Enum.PartType.Cylinder
+				beam.Size = Vector3.new(40, 6, 6)
+				beam.Color = Color3.fromRGB(0, 255, 120)
+				beam.Material = Enum.Material.Neon
+				beam.Transparency = 0.6
+				beam.Anchored = true
+				beam.CanCollide = false
+				beam.CFrame = CFrame.new(root.Position + Vector3.new(0, 20, 0)) * CFrame.Angles(0, 0, math.rad(90))
+				beam.Parent = folder
+	
+				task.spawn(function()
+					for i = 1, 60 do
+						if generation ~= gen then break end
+						local c = getChar()
+						local r = c and c:FindFirstChild("HumanoidRootPart")
+						if not r then break end
+						r.CFrame = r.CFrame + Vector3.new(0, 0.5, 0)
+						task.wait(0.03)
+					end
+					beam.Parent = nil
+				end)
+				return "YOU ARE BEING ABDUCTED. Resistance is futile."
+			end,
+		},
+		{
+			name = "Rainbow Character [SS]",
+			category = "UTILITY",
+			code = "--[=[ Rainbow Morph (backdoor)\n-- paints your character rainbow serverside\nrequire(282562):rainbowChar('me', {Speed = 5}) ]=]",
+			effect = function()
+				local char = getChar()
+				if not char then return NO_CHAR end
+				local gen = generation
+				task.spawn(function()
+					for i = 1, 100 do
+						if generation ~= gen then break end
+						local c = getChar()
+						if not c then break end
+						for _, p in ipairs(c:GetDescendants()) do
+							if p:IsA("BasePart") then
+								p.Color = Color3.fromHSV((i / 20) % 1, 1, 1)
+							end
+						end
+					task.wait(0.05)
+					end
+				end)
+				return "RAINBOW MODE ON - you are fabulous (Clear All Effects to stop)"
+			end,
+		},
+		{
+			name = "Night Vision [SS]",
+			category = "UTILITY",
+			code = "--[=[ Night Vision (backdoor)\n-- gives everyone on the server night vision\nrequire(1110004):nightVision(true) ]=]",
+			effect = function()
+				local cc = Instance.new("ColorCorrectionEffect")
+				cc.Name = "ZM_NIGHTVISION"
+				cc.Brightness = 0.25
+				cc.Contrast = 0.3
+				cc.Saturation = 0.1
+				cc.Parent = Lighting
+				return "NIGHT VISION enabled - the dark holds no secrets (Clear All Effects to remove)"
+			end,
+		},
 	}
 	
 	-- ============ SCRIPT LIST UI (tabs + search) ============
@@ -1617,7 +1851,6 @@ local script = G2L["2"];
 					button.BackgroundColor3 = ENTRY_SELECTED
 					codeBox.Text = data.code
 					setStatus("Loaded: " .. data.name)
-					log("Loaded script: " .. data.name)
 					playSound(SND_CLICK, 0.3)
 				end)
 			end
@@ -1663,23 +1896,18 @@ local script = G2L["2"];
 			if busy then return end
 			if injected then
 				setStatus("Already injected")
-				log("Inject blocked: already injected")
 				return
 			end
 			busy = true
-			log("Starting injection...")
 			setStatus("Injecting...")
 			task.wait(0.8)
 			setStatus("Bypassing security...")
-			log("Bypassing Byfron security layer...")
 			task.wait(0.8)
 			setStatus("Hooking functions...")
-			log("Hooking 247 server functions...")
 			task.wait(0.6)
 			injected = true
 			busy = false
 			setStatus("Injected successfully", Color3.fromRGB(0, 255, 100))
-			log("Injection complete. DLL attached.", Color3.fromRGB(0, 255, 100))
 			toast("Injected successfully!", Color3.fromRGB(20, 90, 40))
 			playSound(SND_CLICK, 0.5)
 		end)
@@ -1690,7 +1918,6 @@ local script = G2L["2"];
 		executeButton.MouseButton1Click:Connect(function()
 			if not injected then
 				setStatus("Error: press INJECT first!", Color3.fromRGB(255, 70, 70))
-				log("Execute blocked: not injected", Color3.fromRGB(255, 70, 70))
 				return
 			end
 			if busy then return end
@@ -1707,29 +1934,23 @@ local script = G2L["2"];
 	
 			if target then
 				setStatus("Executing " .. target.name .. "...")
-				log("Executing " .. target.name .. "...")
 				playSound(SND_EXEC, 0.4)
 				task.wait(0.4)
 				local ok, result = pcall(target.effect)
 				if ok then
 					setStatus("Executed: " .. target.name, Color3.fromRGB(0, 255, 100))
-					log("OK: " .. tostring(result), Color3.fromRGB(0, 255, 100))
 					toast("Executed: " .. target.name, Color3.fromRGB(20, 90, 40))
 				else
 					setStatus("Script error: " .. tostring(result), Color3.fromRGB(255, 70, 70))
-					log("ERROR: " .. tostring(result), Color3.fromRGB(255, 70, 70))
 					toast("Script error!", Color3.fromRGB(120, 25, 25))
 				end
 			elseif code ~= "" then
 				setStatus("Executing custom script...")
-				log("Executing custom script...")
 				playSound(SND_EXEC, 0.4)
 				task.wait(0.4)
 				setStatus("Executed custom script (locally)", Color3.fromRGB(0, 255, 100))
-				log("OK: custom script executed", Color3.fromRGB(0, 255, 100))
 			else
 				setStatus("Nothing to execute - pick a script or type code", Color3.fromRGB(255, 70, 70))
-				log("Execute blocked: empty script", Color3.fromRGB(255, 70, 70))
 			end
 	
 			busy = false
@@ -1743,7 +1964,7 @@ local script = G2L["2"];
 		end)
 	end
 	
-	log("ZM HUBBY v3 loaded - " .. #FAKE_SCRIPTS .. " scripts ready")
+	
 end;
 task.spawn(C_2);
 
