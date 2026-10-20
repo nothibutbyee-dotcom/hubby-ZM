@@ -7,7 +7,7 @@
  Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER 
 ]=]
 
--- Instances: 17 | Scripts: 1 | Modules: 0 | Tags: 0
+-- Instances: 22 | Scripts: 1 | Modules: 0 | Tags: 0
 local G2L = {};
 
 -- StarterGui.ScreenGui
@@ -25,8 +25,8 @@ G2L["3"] = Instance.new("Frame", G2L["1"]);
 G2L["3"]["ZIndex"] = 0;
 G2L["3"]["BorderSizePixel"] = 0;
 G2L["3"]["BackgroundColor3"] = Color3.fromRGB(239, 7, 255);
-G2L["3"]["Size"] = UDim2.new(0.39181, 0, 0.56628, 0);
-G2L["3"]["Position"] = UDim2.new(0.48271, 0, 0.10389, 0);
+G2L["3"]["Size"] = UDim2.new(0.41165, 0, 0.4717, 0);
+G2L["3"]["Position"] = UDim2.new(0.21134, 0, 0.27191, 0);
 G2L["3"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 
 
@@ -105,7 +105,6 @@ G2L["a"]["Position"] = UDim2.new(0.05556, 0, 0.78632, 0);
 
 -- StarterGui.ScreenGui.Frame.TextBox
 G2L["b"] = Instance.new("TextBox", G2L["3"]);
-G2L["b"]["CursorPosition"] = -1;
 G2L["b"]["TextXAlignment"] = Enum.TextXAlignment.Left;
 G2L["b"]["BorderSizePixel"] = 2;
 G2L["b"]["TextWrapped"] = true;
@@ -146,7 +145,7 @@ G2L["d"]["Visible"] = false;
 G2L["d"]["BorderSizePixel"] = 0;
 G2L["d"]["BackgroundColor3"] = Color3.fromRGB(239, 7, 255);
 G2L["d"]["Size"] = UDim2.new(0.53922, 0, 1.02895, 0);
-G2L["d"]["Position"] = UDim2.new(-0.5683, 0, -0.01559, 0);
+G2L["d"]["Position"] = UDim2.new(-0.57856, 0, -0.01729, 0);
 G2L["d"]["Name"] = [[ScriptList]];
 G2L["d"]["BackgroundTransparency"] = 0.15;
 
@@ -170,40 +169,83 @@ G2L["f"] = Instance.new("ScrollingFrame", G2L["d"]);
 G2L["f"]["BorderSizePixel"] = 0;
 G2L["f"]["CanvasSize"] = UDim2.new(0, 0, 0, 0);
 G2L["f"]["Name"] = [[List]];
-G2L["f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["f"]["BackgroundColor3"] = Color3.fromRGB(19, 21, 26);
 G2L["f"]["AutomaticCanvasSize"] = Enum.AutomaticSize.Y;
-G2L["f"]["Size"] = UDim2.new(0.93333, 0, 0.8547, 0);
-G2L["f"]["Position"] = UDim2.new(0.03333, 0, 0.12821, 0);
+G2L["f"]["Size"] = UDim2.new(0.933, 0, 0.7, 0);
+G2L["f"]["Position"] = UDim2.new(0.033, 0, 0.27, 0);
 G2L["f"]["ScrollBarThickness"] = 4;
 
 
+-- StarterGui.ScreenGui.Frame.ScriptList.List.UIListLayout
+G2L["10"] = Instance.new("UIListLayout", G2L["f"]);
+G2L["10"]["Padding"] = UDim.new(0, 2);
+G2L["10"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+
+
+-- StarterGui.ScreenGui.Frame.ScriptList.Tabs
+G2L["11"] = Instance.new("Frame", G2L["d"]);
+G2L["11"]["Size"] = UDim2.new(0.94, 0, 0.065, 0);
+G2L["11"]["Position"] = UDim2.new(0.03, 0, 0.115, 0);
+G2L["11"]["Name"] = [[Tabs]];
+G2L["11"]["BackgroundTransparency"] = 1;
+
+
+-- StarterGui.ScreenGui.Frame.ScriptList.Tabs.UIListLayout
+G2L["12"] = Instance.new("UIListLayout", G2L["11"]);
+G2L["12"]["Padding"] = UDim.new(0, 3);
+G2L["12"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+G2L["12"]["FillDirection"] = Enum.FillDirection.Horizontal;
+
+
+-- StarterGui.ScreenGui.Frame.ScriptList.Search
+G2L["13"] = Instance.new("TextBox", G2L["d"]);
+G2L["13"]["Name"] = [[Search]];
+G2L["13"]["PlaceholderColor3"] = Color3.fromRGB(121, 126, 136);
+G2L["13"]["BorderSizePixel"] = 0;
+G2L["13"]["TextSize"] = 13;
+G2L["13"]["TextColor3"] = Color3.fromRGB(236, 236, 236);
+G2L["13"]["BackgroundColor3"] = Color3.fromRGB(26, 29, 35);
+G2L["13"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["13"]["ClearTextOnFocus"] = false;
+G2L["13"]["PlaceholderText"] = [[Search scripts...]];
+G2L["13"]["Size"] = UDim2.new(0.94, 0, 0.07, 0);
+G2L["13"]["Position"] = UDim2.new(0.03, 0, 0.19, 0);
+G2L["13"]["Text"] = [[]];
+
+
+-- StarterGui.ScreenGui.Frame.ScriptList.Search.UICorner
+G2L["14"] = Instance.new("UICorner", G2L["13"]);
+G2L["14"]["CornerRadius"] = UDim.new(0, 4);
+
+
 -- StarterGui.ScreenGui.Frame.Status
-G2L["10"] = Instance.new("TextLabel", G2L["3"]);
-G2L["10"]["TextWrapped"] = true;
-G2L["10"]["TextStrokeTransparency"] = 0;
-G2L["10"]["TextTruncate"] = Enum.TextTruncate.AtEnd;
-G2L["10"]["BorderSizePixel"] = 7;
-G2L["10"]["TextSize"] = 22;
-G2L["10"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["10"]["BackgroundColor3"] = Color3.fromRGB(146, 64, 166);
-G2L["10"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["10"]["TextColor3"] = Color3.fromRGB(255, 104, 248);
-G2L["10"]["BackgroundTransparency"] = 1;
-G2L["10"]["Size"] = UDim2.new(0.95556, 0, 0.06838, 0);
-G2L["10"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
-G2L["10"]["Text"] = [[Status: Ready]];
-G2L["10"]["Name"] = [[Status]];
-G2L["10"]["Position"] = UDim2.new(0.03203, 0, 0.01932, 0);
+G2L["15"] = Instance.new("TextLabel", G2L["3"]);
+G2L["15"]["TextWrapped"] = true;
+G2L["15"]["TextStrokeTransparency"] = 0;
+G2L["15"]["TextTruncate"] = Enum.TextTruncate.AtEnd;
+G2L["15"]["BorderSizePixel"] = 7;
+G2L["15"]["TextSize"] = 22;
+G2L["15"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["15"]["BackgroundColor3"] = Color3.fromRGB(146, 64, 166);
+G2L["15"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["15"]["TextColor3"] = Color3.fromRGB(255, 104, 248);
+G2L["15"]["BackgroundTransparency"] = 1;
+G2L["15"]["Size"] = UDim2.new(0.95556, 0, 0.06838, 0);
+G2L["15"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["15"]["Text"] = [[Status: Ready]];
+G2L["15"]["Name"] = [[Status]];
+G2L["15"]["Position"] = UDim2.new(0.02169, 0, 0.0168, 0);
 
 
 -- StarterGui.ScreenGui.Frame.ImageLabel
-G2L["11"] = Instance.new("ImageLabel", G2L["3"]);
-G2L["11"]["ZIndex"] = 0;
-G2L["11"]["BorderSizePixel"] = 6;
-G2L["11"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["11"]["Image"] = [[rbxassetid://103971627119686]];
-G2L["11"]["Size"] = UDim2.new(0, 612, 0, 449);
-G2L["11"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["16"] = Instance.new("ImageLabel", G2L["3"]);
+G2L["16"]["ZIndex"] = 0;
+G2L["16"]["BorderSizePixel"] = 6;
+G2L["16"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["16"]["Image"] = [[rbxassetid://103971627119686]];
+G2L["16"]["Size"] = UDim2.new(-0.99067, 0, 0.98915, 0);
+G2L["16"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["16"]["Position"] = UDim2.new(1, 0, 0.01616, 0);
 
 
 -- StarterGui.ScreenGui.ListScript
@@ -519,7 +561,7 @@ local script = G2L["2"];
 					eye.CanCollide = false
 					eye.Massless = true
 					eye.CFrame = head.CFrame * CFrame.new(0, 0.15, -0.55)
-					local weld = Instance.new("Weld")
+					local weld = Instance.new("WeldConstraint")
 					weld.Part0 = head
 					weld.Part1 = eye
 					weld.Parent = eye
@@ -568,7 +610,7 @@ local script = G2L["2"];
 					mouth.CanCollide = false
 					mouth.Massless = true
 					mouth.CFrame = head.CFrame * CFrame.new(0, -0.4, -0.5)
-					local weld = Instance.new("Weld")
+					local weld = Instance.new("WeldConstraint")
 					weld.Part0 = head
 					weld.Part1 = mouth
 					weld.Parent = mouth
@@ -633,7 +675,7 @@ local script = G2L["2"];
 						ear.CanCollide = false
 						ear.Massless = true
 						ear.CFrame = head.CFrame * CFrame.new(0.4 * side, 0.6, 0)
-						local weld = Instance.new("Weld")
+						local weld = Instance.new("WeldConstraint")
 						weld.Part0 = head
 						weld.Part1 = ear
 						weld.Parent = ear
@@ -1746,57 +1788,20 @@ local script = G2L["2"];
 	}
 	
 	-- ============ SCRIPT LIST UI (tabs + search) ============
+	-- The Search box, Tabs frame, Title and List layout are baked into the GUI
+	-- in Studio, so this script only references them instead of changing the GUI.
 	local title = scriptList:FindFirstChild("Title")
+	local searchBox = scriptList:FindFirstChild("Search")
+	local tabsFrame = scriptList:FindFirstChild("Tabs")
+	
 	if title then
-		title.Position = UDim2.new(0, 4, 0, 3)
-		title.Size = UDim2.new(1, -8, 0, 14)
 		title.Text = "Script List (" .. #FAKE_SCRIPTS .. ")"
-		title.TextXAlignment = Enum.TextXAlignment.Left
 	end
 	
-	local searchBox = Instance.new("TextBox")
-	searchBox.Name = "Search"
-	searchBox.BackgroundColor3 = Color3.fromRGB(22, 24, 30)
-	searchBox.BorderSizePixel = 0
-	searchBox.Position = UDim2.new(0, 4, 0, 20)
-	searchBox.Size = UDim2.new(1, -8, 0, 20)
-	searchBox.PlaceholderText = "Search scripts..."
-	searchBox.Text = ""
-	searchBox.TextColor3 = Color3.fromRGB(230, 230, 230)
-	searchBox.PlaceholderColor3 = Color3.fromRGB(120, 120, 130)
-	searchBox.Font = Enum.Font.Code
-	searchBox.TextSize = 12
-	searchBox.ClearTextOnFocus = false
-	searchBox.Parent = scriptList
-	
-	local searchCorner = Instance.new("UICorner")
-	searchCorner.CornerRadius = UDim.new(0, 4)
-	searchCorner.Parent = searchBox
-	
-	local tabsFrame = Instance.new("Frame")
-	tabsFrame.Name = "Tabs"
-	tabsFrame.BackgroundTransparency = 1
-	tabsFrame.Position = UDim2.new(0, 4, 0, 44)
-	tabsFrame.Size = UDim2.new(1, -8, 0, 18)
-	tabsFrame.Parent = scriptList
-	
-	local tabsLayout = Instance.new("UIListLayout")
-	tabsLayout.FillDirection = Enum.FillDirection.Horizontal
-	
-	tabsLayout.Padding = UDim.new(0, 3)
-	tabsLayout.SortOrder = Enum.SortOrder.LayoutOrder
-	tabsLayout.Parent = tabsFrame
-	
-	list.Position = UDim2.new(0, 4, 0, 66)
-	list.Size = UDim2.new(1, -8, 1, -70)
-	
-	local layout = Instance.new("UIListLayout")
-	layout.Padding = UDim.new(0, 4)
-	layout.SortOrder = Enum.SortOrder.LayoutOrder
-	layout.Parent = list
-	
-	list.AutomaticCanvasSize = Enum.AutomaticSize.Y
-	list.CanvasSize = UDim2.new(0, 0, 0, 0)
+	if not searchBox or not tabsFrame then
+		warn("ScreenGui is missing Search box or Tabs frame")
+		return
+	end
 	
 	local ENTRY_COLOR = Color3.fromRGB(25, 28, 34)
 	local ENTRY_HOVER = Color3.fromRGB(40, 44, 54)
